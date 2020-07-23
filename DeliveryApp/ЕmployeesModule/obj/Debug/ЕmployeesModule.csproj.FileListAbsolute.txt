@@ -16,3 +16,8 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesMo
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule.csproj.CopyComplete
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule.dll
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule.pdb
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule_MarkupCompile.cache
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule_MarkupCompile.lref
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule.g.resources
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\Employees\Views\EmployeesPage.g.cs
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\Employees\Views\EmployeesPage.baml
