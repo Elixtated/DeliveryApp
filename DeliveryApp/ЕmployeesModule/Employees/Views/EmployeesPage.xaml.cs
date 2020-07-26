@@ -1,8 +1,9 @@
 ﻿
 
 using System.Windows.Controls;
+using ЕmployeesModule.Employees.ViewModels;
 
-namespace DeliveryApp.Orders.Views
+namespace ЕmployeesModule.Employees.Views
 {
     /// <summary>
     /// Логика взаимодействия для OrdersPage.xaml
@@ -11,6 +12,7 @@ namespace DeliveryApp.Orders.Views
     {
         public OrdersPage()
         {
+            DataContext = new EmployeesViewModel();
             InitializeComponent();
         }
     }

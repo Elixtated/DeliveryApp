@@ -1,6 +1,4 @@
-﻿using DeliveryApp.MainWindow.ViewModels;
-using DeliveryApp.Orders.ViewModels;
-using DeliveryApp.Orders.Views;
+﻿using DeliveryApp.Orders.ViewModels;
 using System.Windows.Controls;
 
 namespace DeliveryApp.Orders.Views

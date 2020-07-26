@@ -59,12 +59,19 @@
       <Name>CommonModule</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EmployeesCreator\Model\" />
+    <Folder Include="EmployeesCreator\ViewModels\" />
+    <Folder Include="EmployeesCreator\Views\" />
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Employees\Views\EmployeesPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Employees\Views\Views.vsspell" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

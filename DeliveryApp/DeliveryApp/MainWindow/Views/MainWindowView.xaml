@@ -13,16 +13,21 @@
             <ColumnDefinition Width="150" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
+
         <ListBox Grid.Column="0">
-            <ListBoxItem Background="LightGray"
+
+            <ListBoxItem
+                         Background="LightGray"
                          VerticalContentAlignment="Center"
-                         Content="Заявки" />
-            <ListBoxItem Background="LightGray"
+                         Content="Заявки"/>
+            <ListBoxItem 
+                         Background="LightGray"
                          VerticalContentAlignment="Center"
                          Content="Нарушения"/>
+            
         </ListBox>
-        
+
+
         <navigator:NavigatorView Grid.Column="1"
                                  DataContext="{Binding NavigatorService.NavigatorViewModel}"
                                  HorizontalAlignment="Stretch"

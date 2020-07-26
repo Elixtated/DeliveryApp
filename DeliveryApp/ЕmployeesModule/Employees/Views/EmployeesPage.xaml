@@ -1,4 +1,4 @@
-﻿<Page x:Class="DeliveryApp.Orders.Views.OrdersPage"
+﻿<Page x:Class="DeliveryApp.EmployeesModule.Employees.Views.EmployeesPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -16,21 +16,57 @@
     
     
     <Grid Background="Transparent">
+        
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+        
         <ListBox Grid.Row="0"
+                 ItemsSource="{Binding Employee}"
                  HorizontalContentAlignment="Stretch"
-                 >
+                 SelectionMode="Extended">
+
+            <ListBox.ItemTemplate>
+                
+                <DataTemplate>
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="TextAlignment" Value="Justify"/>
+                            </Style>
+                        </Grid.Resources>
+
+                        <TextBlock Grid.Column="1" Text="{Binding Employee.EmployeeName}"/>
+                        <TextBlock Grid.Column="2" Text="{Binding Employee.OrdersComplete}"/>
+
+                    </Grid>
+                    
+                    
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
+
+        
         <Grid Grid.Row="1">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0">Редактировать</Button>
-            <Button Grid.Column="1">Добавить</Button>
+
+            <Button Grid.Column="0"
+                    Content="Добавить"/>
+            <Button Grid.Column="1"
+                    Content="Удалить"/>
+
         </Grid>
     </Grid>
     
