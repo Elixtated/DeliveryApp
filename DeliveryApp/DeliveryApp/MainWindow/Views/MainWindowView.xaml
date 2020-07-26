@@ -13,20 +13,29 @@
             <ColumnDefinition Width="150" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-
-        <ListBox Grid.Column="0">
-
-            <ListBoxItem
-                         Background="LightGray"
-                         VerticalContentAlignment="Center"
-                         Content="Заявки"/>
-            <ListBoxItem 
-                         Background="LightGray"
-                         VerticalContentAlignment="Center"
-                         Content="Нарушения"/>
+        <Grid>
             
-        </ListBox>
+            <ListBox Grid.Column="0">
 
+                <ListBoxItem
+                         Background="LightGray"
+                         VerticalContentAlignment="Center"
+                         Content="Заявки">
+                    <ListBoxItem.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding OpenOrdersMenuCommand}"/>
+                    </ListBoxItem.InputBindings>
+                </ListBoxItem>
+                <ListBoxItem 
+                         Background="LightGray"
+                         VerticalContentAlignment="Center"
+                         Content="Нарушения">
+                    <ListBoxItem.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding OpenEmployeesMenuCommand}"/>
+                    </ListBoxItem.InputBindings>
+                </ListBoxItem>
+        </ListBox>
+           
+        </Grid>
 
         <navigator:NavigatorView Grid.Column="1"
                                  DataContext="{Binding NavigatorService.NavigatorViewModel}"

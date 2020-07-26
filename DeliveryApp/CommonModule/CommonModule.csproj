@@ -46,7 +46,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="CommonTools\RelayCommand.cs" />
     <Compile Include="Controls\DigitTextBox.xaml.cs">
       <DependentUpon>DigitTextBox.xaml</DependentUpon>

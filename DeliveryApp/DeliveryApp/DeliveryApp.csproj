@@ -78,8 +78,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow\Views\MainWindowView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="OrderCreator\Views\OrdersCreatorPage.xaml">
       <SubType>Designer</SubType>
