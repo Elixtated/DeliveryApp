@@ -16,6 +16,23 @@
     
     
     <Grid Background="Transparent">
-      
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="0"
+                 HorizontalContentAlignment="Stretch"
+                 >
+        </ListBox>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0">Редактировать</Button>
+            <Button Grid.Column="1">Добавить</Button>
+        </Grid>
     </Grid>
+    
+    
 </Page>

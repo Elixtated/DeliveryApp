@@ -15,7 +15,7 @@ namespace DeliveryApp.Orders.ViewModels
         private NavigatorService _navigatorService;
         public OrdersViewModel()
         {
-            _navigatorService = CommonModule.Services.NavigatorService.GetInstance();
+            _navigatorService = NavigatorService.GetInstance();
             Orders = new ObservableCollection<OrderListItem>();
 
             OpenCreatePageCommand = new RelayCommand<Order>((order) => OpenCreatePage(order), (o) => true);

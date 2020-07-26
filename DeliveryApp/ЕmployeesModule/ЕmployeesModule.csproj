@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employees\Model\Employee.cs" />
+    <Compile Include="Employees\Model\EmployeesListItem.cs" />
     <Compile Include="Employees\ViewModels\EmployeesViewModel.cs" />
     <Compile Include="Employees\Views\EmployeesPage.xaml.cs">
       <DependentUpon>EmployeesPage.xaml</DependentUpon>
