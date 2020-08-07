@@ -3,8 +3,8 @@ using ЕmployeesModule.Employees.Views;
 using CommonModule.Services;
 using System.Windows.Input;
 using CommonModule.CommonTools;
-using DeliveryApp.Orders.Views;
-using System.Windows.Controls;
+using ЕmployeesModule;
+using CommonModule.Controls.Modules.ViewModel;
 
 namespace DeliveryApp.MainWindow.ViewModels
 {
@@ -12,33 +12,22 @@ namespace DeliveryApp.MainWindow.ViewModels
     {
         public MainWindowViewModel()
         {
-            OrdersPage = new OrdersPage();
-            EmployeesPage = new EmployeesPage();
-            NavigatorService = NavigatorService.GetInstance();
-            NavigatorService.SetCurrentPage(OrdersPage);
-
-            OpenOrdersMenuCommand = new RelayCommand(OpenOrdersMenu);
-            OpenEmployeesMenuCommand = new RelayCommand(OpenEmployeesMenu);
             
+            ModulesListViewModel = new ModulesListViewModel();
+            OrderModule orderModule = new OrderModule();
+           
+            EmployeeModule employeeModule = new EmployeeModule();
+            ModulesListViewModel.AddModuleToList(orderModule);
+            ModulesListViewModel.AddModuleToList(employeeModule);
+            NavigatorService = NavigatorService.GetInstance();
+            //NavigatorService.SetCurrentPage();
         }
-        
-        public ICommand OpenOrdersMenuCommand { get; }
-        public ICommand OpenEmployeesMenuCommand { get; }
-
-        public Page OrdersPage { get; set; }
-        public Page EmployeesPage { get; set; }
 
         public NavigatorService NavigatorService { get; private set; }
 
-        private void OpenOrdersMenu()
-        {
-            NavigatorService.SetCurrentPage(OrdersPage);
-        }
+        EmployeesPage EmployeesPage { get; set; }
 
-        private void OpenEmployeesMenu()
-        {
-            NavigatorService.SetCurrentPage(new EmployeesPage());
-        }
+        public ModulesListViewModel ModulesListViewModel { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

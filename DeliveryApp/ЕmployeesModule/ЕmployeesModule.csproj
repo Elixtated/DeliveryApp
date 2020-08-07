@@ -47,12 +47,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeesCreator\ViewModels\EmployeesCreatorViewModel.cs" />
+    <Compile Include="EmployeesCreator\Views\EmployeesCreatorPage.xaml.cs">
+      <DependentUpon>EmployeesCreatorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Employees\Model\Employee.cs" />
     <Compile Include="Employees\Model\EmployeesListItem.cs" />
     <Compile Include="Employees\ViewModels\EmployeesViewModel.cs" />
     <Compile Include="Employees\Views\EmployeesPage.xaml.cs">
       <DependentUpon>EmployeesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,10 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EmployeesCreator\Model\" />
-    <Folder Include="EmployeesCreator\ViewModels\" />
-    <Folder Include="EmployeesCreator\Views\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="EmployeesCreator\Views\EmployeesCreatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Employees\Views\EmployeesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

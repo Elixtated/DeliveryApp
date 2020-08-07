@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-2885806393
+3869515333
 
-10-203608933
-14-534746103
-Controls\DigitTextBox.xaml;Navigator\Views\NavigatorView.xaml;
+13-1958104215
+16-120018491
+Controls\DigitTextBox.xaml;Controls\Modules\View\ModulesList.xaml;Navigator\Views\NavigatorView.xaml;
 
-True
+False
 

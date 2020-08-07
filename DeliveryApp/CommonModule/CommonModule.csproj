@@ -36,6 +36,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,6 +52,11 @@
     <Compile Include="Controls\DigitTextBox.xaml.cs">
       <DependentUpon>DigitTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Modules\View\ModulesList.xaml.cs">
+      <DependentUpon>ModulesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Modules\ViewModel\ModulesListViewModel.cs" />
+    <Compile Include="IModule.cs" />
     <Compile Include="Navigator\ViewModels\NavigatorViewModel.cs" />
     <Compile Include="Navigator\Views\NavigatorView.xaml.cs">
       <DependentUpon>NavigatorView.xaml</DependentUpon>
@@ -62,6 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\Modules\View\ModulesList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Navigator\Views\NavigatorView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -69,5 +80,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

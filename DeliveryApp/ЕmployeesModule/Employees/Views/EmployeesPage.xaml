@@ -33,8 +33,10 @@
 
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
                         <Grid.Resources>
@@ -43,10 +45,15 @@
                                 <Setter Property="TextAlignment" Value="Justify"/>
                             </Style>
                         </Grid.Resources>
-
+                        <CheckBox IsChecked="{Binding isChecked}" VerticalAlignment="Center"/>
                         <TextBlock Grid.Column="1" Text="{Binding Employee.EmployeeName}"/>
-                        <TextBlock Grid.Column="2" Text="{Binding Employee.OrdersComplete}"/>
-
+                        <TextBlock Grid.Column="2" Text="{Binding Employee.EmployeePosition}"/>
+                        <TextBlock Grid.Column="3" Text="{Binding Employee.EmplpyeeNumber}"/>
+                        <Grid.InputBindings>
+                            <MouseBinding CommandParameter="{Binding Employee}" MouseAction="LeftDoubleClick" Command="{Binding DataContext.CreateEmployeeCommand,
+                                RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Page}}">
+                            </MouseBinding>
+                        </Grid.InputBindings>
                     </Grid>
 
 
@@ -63,9 +70,11 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Column="0"
-                    Content="Добавить"/>
+                    Content="Добавить"
+                    Command="{Binding CreateEmployeeCommand}"/>
             <Button Grid.Column="1"
-                    Content="Удалить"/>
+                    Content="Удалить"
+                    Command="{Binding RemoveEmployeeCommand}"/>
 
         </Grid>
     </Grid>
