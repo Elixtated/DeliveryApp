@@ -24,3 +24,5 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\CommonModule.csproj.CoreCompileInputs.cache
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\CommonModule.dll
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\CommonModule.pdb
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\Controls\Modules\View\ModulesList.g.cs
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\Controls\Modules\View\ModulesList.baml

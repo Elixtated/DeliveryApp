@@ -12,7 +12,6 @@ namespace DeliveryApp.OrderCreator.Views
     {
         public OrdersCreatorPage()
         {
-            
             InitializeComponent();
         }
     }

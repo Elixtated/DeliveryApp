@@ -21,3 +21,5 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesMo
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\ЕmployeesModule.g.resources
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\Employees\Views\EmployeesPage.g.cs
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\Employees\Views\EmployeesPage.baml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\EmployeesCreator\Views\EmployeesCreatorPage.g.cs
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\EmployeesCreator\Views\EmployeesCreatorPage.baml

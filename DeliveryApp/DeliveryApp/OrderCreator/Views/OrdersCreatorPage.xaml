@@ -95,7 +95,9 @@
                 VerticalAlignment="Bottom"
                 HorizontalAlignment="Right"
                 Margin="0,0,100,30"
+                Content="Сохранить"
                 Command="{Binding SaveOrderCommand,
-                                  UpdateSourceTrigger=Default}">Сохранить</Button>
+                                  UpdateSourceTrigger=Default}">
+        </Button>
     </Grid>
 </Page>
