@@ -10,7 +10,8 @@ namespace ЕmployeesModule.Employees.Model
     public class Employee : INotifyPropertyChanged
     {
         private string _employeeName;
-        private string _ordersComplete;
+        private string _employeeNumber;
+        private string _emplpyeePosition;
 
         public Employee()
         {
@@ -29,15 +30,27 @@ namespace ЕmployeesModule.Employees.Model
             }
         }
 
-        public string OrdersComplete
+        public string EmplpyeeNumber
         {
-            get => _ordersComplete;
+            get => _employeeNumber;
             set
             {
-                _ordersComplete = value;
-                OnPropertyChanged("OrdersComplete");
+                _employeeNumber = value;
+                OnPropertyChanged("EmplpyeeNumber");
             }
         }
+
+        public string EmployeePosition
+        {
+            get => _emplpyeePosition;
+            set
+            {
+                _emplpyeePosition = value;
+                OnPropertyChanged("EmployeePosition");
+            }
+        }
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

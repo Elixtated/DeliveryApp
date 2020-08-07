@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Elixtated\Desktop\DeliveryApp\DeliveryApp\obj\Debug\
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\obj\Debug\
 DeliveryApp
 none
 false
 DEBUG;TRACE
-C:\Users\Elixtated\Desktop\DeliveryApp\DeliveryApp\App.xaml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\App.xaml
 4-1506145373
 
-192146413022
-17266341636
+201003765279
+172006742523
 Login\Views\LoginView.xaml;MainWindow\Views\MainWindowView.xaml;OrderCreator\Views\OrdersCreatorPage.xaml;Orders\Views\OrdersPage.xaml;
 
-True
+False
 

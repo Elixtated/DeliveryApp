@@ -31,18 +31,18 @@ namespace DeliveryApp.Orders.ViewModels
 
         private void OpenCreatePage(Order order)
         {
-            var creatorViewModel = new OrderCreatorViewModel(order);
-            creatorViewModel.CardSaved += CreatorViewModelOnCardSaved;
+            var orderCreatorViewModel = new OrderCreatorViewModel(order);
+            orderCreatorViewModel.CardSaved += OrderCreatorViewModelOnCardSaved;
 
-            var creatorPage = new OrdersCreatorPage
+            var orderCreatorPage = new OrdersCreatorPage
             {
-                DataContext = creatorViewModel
+                DataContext = orderCreatorViewModel
             };
 
-            _navigatorService.SetCurrentPage(creatorPage);
+            _navigatorService.SetCurrentPage(orderCreatorPage);
         }
 
-        private void CreatorViewModelOnCardSaved(object sender, Order newOrder)
+        private void OrderCreatorViewModelOnCardSaved(object sender, Order newOrder)
         {
             if (Orders.Any(o => o.Order.OrderGuid == newOrder.OrderGuid))
             {
