@@ -9,10 +9,6 @@ namespace CommonModule.Navigator.ViewModels
     {
         private Page _currentContent;
 
-        public NavigatorViewModel()
-        {
-        }
-
         public Page CurrentContent
         {
             get => _currentContent;

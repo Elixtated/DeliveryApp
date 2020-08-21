@@ -19,7 +19,7 @@ namespace ЕmployeesModule.Employees.ViewModels
         private NavigatorService _navigatorService;
         public EmployeesViewModel()
         {
-            _navigatorService = NavigatorService.GetInstance();
+            _navigatorService = NavigatorService.Instance;
             Employees = new ObservableCollection<EmployeesListItem>();
 
             CreateEmployeeCommand = new RelayCommand<Employee>((employee) => CreateEmployee(employee), (o) => true);

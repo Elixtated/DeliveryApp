@@ -12,20 +12,18 @@ namespace DeliveryApp.MainWindow.ViewModels
     {
         public MainWindowViewModel()
         {
-            
+
             ModulesListViewModel = new ModulesListViewModel();
             OrderModule orderModule = new OrderModule();
-           
             EmployeeModule employeeModule = new EmployeeModule();
             ModulesListViewModel.AddModuleToList(orderModule);
             ModulesListViewModel.AddModuleToList(employeeModule);
-            NavigatorService = NavigatorService.GetInstance();
-            //NavigatorService.SetCurrentPage();
+            NavigatorService = NavigatorService.Instance;
+           
         }
 
         public NavigatorService NavigatorService { get; private set; }
 
-        EmployeesPage EmployeesPage { get; set; }
 
         public ModulesListViewModel ModulesListViewModel { get; set; }
 

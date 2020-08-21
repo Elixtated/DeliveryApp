@@ -26,3 +26,9 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\CommonModule.pdb
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\Controls\Modules\View\ModulesList.g.cs
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\Controls\Modules\View\ModulesList.baml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\bin\Debug\CommonModule.dll.config
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\bin\Debug\EntityFramework.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\bin\Debug\EntityFramework.xml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\CommonModule\obj\Debug\CommonModule.csproj.CopyComplete

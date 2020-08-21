@@ -11,11 +11,13 @@ namespace CommonModule.Controls.Modules.ViewModel
         private IModule _selectedModule;
         public ModulesListViewModel()
         {
-            NavigatorService = NavigatorService.GetInstance();
+            NavigatorService = NavigatorService.Instance;
             Modules = new ObservableCollection<IModule>();
-            //OpenModulePageCommand = new RelayCommand<IModule>(OpenModulePage);
-            
+            OpenModulePageCommand = new RelayCommand<IModule>(OpenModulePage);
         }
+        public ICommand OpenModulePageCommand { get; }
+
+        public ObservableCollection<IModule> Modules { get; set; }
 
         public void AddModuleToList(IModule module)
         {
@@ -34,12 +36,12 @@ namespace CommonModule.Controls.Modules.ViewModel
             }
         }
 
-        //public ICommand OpenModulePageCommand { get; }
+        
         private void OpenModulePage(IModule module)
         {
             NavigatorService.SetCurrentPage(module.ModulePage);
         }
 
-        public ObservableCollection<IModule> Modules { get; set; }
+        
     }
 }

@@ -99,3 +99,9 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.csproj.CopyComplete
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.exe
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.pdb
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\EntityFramework.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\CommonModule.dll.config
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\EntityFramework.xml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\DeliveryApp\bin\Debug\ЕmployeesModule.dll.config
