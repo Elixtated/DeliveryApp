@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace DeliveryApp.Navigator.Views
+namespace CommonModule.Navigator.Views
 {
     public partial class NavigatorView
     {

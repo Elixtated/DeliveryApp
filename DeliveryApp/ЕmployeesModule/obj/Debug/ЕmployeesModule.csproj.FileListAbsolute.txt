@@ -23,3 +23,9 @@ C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesMo
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\Employees\Views\EmployeesPage.baml
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\EmployeesCreator\Views\EmployeesCreatorPage.g.cs
 C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\obj\Debug\EmployeesCreator\Views\EmployeesCreatorPage.baml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\EntityFramework.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\CommonModule.dll.config
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\EntityFramework.xml
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\ЕmployeesModule.dll.config
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Elixtated\Desktop\Projects\DeliveryApplication\DeliveryApp\ЕmployeesModule\bin\Debug\EntityFramework.SqlServer.xml

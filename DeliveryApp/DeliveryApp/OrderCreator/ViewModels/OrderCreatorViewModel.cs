@@ -1,4 +1,5 @@
-﻿using CommonModule.CommonTools;
+﻿using CommonModule;
+using CommonModule.CommonTools;
 using CommonModule.Services;
 using DeliveryApp.Orders.Model;
 using System;
@@ -20,12 +21,13 @@ namespace DeliveryApp.OrderCreator.ViewModels
            
             _order = order ?? new Order();
             SaveOrderCommand = new RelayCommand(SaveOrder);
-
-            _navigatorService = NavigatorService.GetInstance();
+           dataBaseService = DataBaseService.GetInstance();
+            _navigatorService = NavigatorService.Instance;
         }
 
         public event EventHandler<Order> CardSaved;
-
+        
+        public DataBaseService dataBaseService;
         public string OrderNumber
         {
             get => _order.OrderNumber;
@@ -93,6 +95,8 @@ namespace DeliveryApp.OrderCreator.ViewModels
 
         private void SaveOrder()
         {
+            
+            dataBaseService.SaveOrder(_order);
             CardSaved?.Invoke(this, _order);
             _navigatorService.BackToPreviousPage();
         }

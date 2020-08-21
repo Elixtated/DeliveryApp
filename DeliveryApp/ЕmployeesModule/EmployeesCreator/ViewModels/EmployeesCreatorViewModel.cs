@@ -22,7 +22,7 @@ namespace ЕmployeesModule.EmployeesCreator.ViewModels
             _employee = employee ?? new Employee();
             SaveEmployeeCommand = new RelayCommand(SaveEmployee);
 
-            _navigatorService = NavigatorService.GetInstance();
+            _navigatorService = NavigatorService.Instance;
         }
 
         public string EmployeeName

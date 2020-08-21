@@ -1,11 +1,12 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 using CommonModule.Navigator.ViewModels;
 
 namespace CommonModule.Services
 {
     public class NavigatorService
     {
-        private static NavigatorService _instance;
+        private static readonly Lazy<NavigatorService> _instance = new Lazy<NavigatorService>(() => new NavigatorService());
 
         private Page _previousPage;
         
@@ -13,13 +14,10 @@ namespace CommonModule.Services
         {
             NavigatorViewModel = new NavigatorViewModel();
         }
-
-        public static NavigatorService GetInstance()
-        {
-            return _instance ?? (_instance = new NavigatorService());
-        }
-        
         public NavigatorViewModel NavigatorViewModel { get; }
+
+        public static NavigatorService Instance { get => _instance.Value; }
+        
 
         public void SetCurrentPage(Page currentPage)
         {

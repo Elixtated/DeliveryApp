@@ -4,7 +4,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModel="clr-namespace:DeliveryApp.MainWindow.ViewModels"
-        xmlns:navigator="clr-namespace:DeliveryApp.Navigator.Views;assembly=CommonModule"
+        xmlns:navigator="clr-namespace:CommonModule.Navigator.Views;assembly=CommonModule"
+        xmlns:navigatorService="clr-namespace:CommonModule.Services;assembly=CommonModule"
         xmlns:modulesList="clr-namespace:CommonModule.Controls.Modules.View;assembly=CommonModule"
         mc:Ignorable="d"
         d:DesignHeight="600" d:DesignWidth="800" MinHeight="600" MinWidth="800" MaxHeight="500" MaxWidth="800"
@@ -21,7 +22,7 @@
 
 
         <navigator:NavigatorView Grid.Column="1"
-                                 DataContext="{Binding NavigatorService.NavigatorViewModel}"
+                                 DataContext="{Binding Source={x:Static navigatorService:NavigatorService.Instance},Path=NavigatorViewModel}"
                                  HorizontalAlignment="Stretch"
                                  VerticalAlignment="Stretch"/>
     </Grid>
